@@ -1,0 +1,281 @@
+/* recordatorio: hacer el favicon-----------------------------------*/
+body {
+    background-color: rgb(245, 214, 219);
+    padding: 1px;
+    margin: 3px;
+    text-decoration: none;
+    background-image: linear-gradient(to top, rgb(245, 214, 219), rgb(218, 124, 175));
+}
+/* estilos del h1 al h3------------------------------------------------ */
+.titulo{
+    font-family: 'Great Vibes', cursive;
+    font-size: 60px;
+    text-align: center;
+    margin: 5px;
+}                                                                                                                                                                                                 
+
+h2{
+  font-family: 'Arimo', sans-serif;
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 30px;
+}
+
+h3{
+    font-family: 'Arimo', sans-serif;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+/* seccion barra de navegacion------------------------------------------*/
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+
+nav ul li a{                                                                                                                                         
+    color: black;
+    font-family: 'Arimo', sans-serif;
+    text-decoration: none;
+}
+
+.container-fluid ul {
+display: flex;
+list-style: none;
+padding: 10px;
+margin: 10px;
+align-items: center;
+}
+
+.container-fluid ul li a{
+  display: flex;
+  padding: 10px;
+text-decoration: none;
+color: black;
+justify-content: space-between;
+font-size: 20px;
+}
+
+
+
+.listaNav{
+  display: flex;
+  justify-content: end;
+}
+
+.logo {
+
+  padding: 10px;
+  
+}
+/*SECCION MENU PRINCIPAL-------------------------------------------------*/
+.carousel-inner {
+  padding: 50px;
+  padding-bottom: 30px;
+  
+}
+    
+    
+
+/* etiqueta p-----------------------------------------------------------*/
+ p {
+    font-family: 'Arimo', sans-serif;
+    margin-left: 10px;
+ }
+
+
+ /* SECCION AROMATICOS -----------------------------------------------------------------*/
+.parrafoAromatico{
+  margin:10px;
+  padding:10px;
+  font-size: 18px;
+}
+ .contenedorImagenPadre{
+   display: grid;
+   grid-template-columns: repeat(4, 280px);
+   padding: 20px;
+ }
+
+ .imagenTexto{
+   text-align: center; 
+   padding: 10px;
+   margin: 10px;
+   border: solid 1px black;
+ }
+
+/* SECCION SUBLIMABLES ----------------------------------------------------------------*/
+.contenedorPadreImagen {
+  display: grid;
+  grid-template-columns: repeat(4, 280px);
+  padding: 20px;
+  
+}
+
+.imagenTextoSublimacion {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border: solid 1px black;
+}
+  
+
+
+
+
+/* SECCION GALERIA-----------------------------------------------------------------------*/
+.contenedorGaleria {
+  display: grid;
+  grid-template-columns: repeat(4, 320px);
+  padding: 30px;
+}
+.galeriaItem {
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+}
+.zoom {
+  
+  transition: 0.5s; 
+}
+
+.zoom:hover {
+  
+          transform: scale(1.1);
+}
+
+/* seccion formulario-----------------------------------------------------*/
+
+  form {
+    border: 2px solid black;
+    width: 350px;
+    margin: auto;
+    padding: 10px 20px;
+   
+            box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 20px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 7px;
+    
+            box-sizing: border-box;
+    font-size: 17px;
+    font-family: 'Arimo', sans-serif;
+  }
+  
+  input:focus {
+    width: 200px;
+    font-size: 24px;
+  }
+
+/* seccion footer-------------------------------------------------------*/
+
+
+footer ul li{
+    list-style: none;
+}
+footer a{
+    font-family: 'Arimo', sans-serif;
+}
+
+footer ul li a{
+    color: black;
+    
+    text-decoration: none;
+}
+
+nav ul{
+    list-style: none;
+}
+
+
+
+.footerControlador{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.listaFooter{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.listaItem{
+  display: flex;
+  padding-inline: 10px;
+  padding-top: 20px;
+}
+
+.listaItem a{
+  color: blue;
+}
+
+
+
+/* MEDIA RESPONSIVE-------------------------------------------------------------------------------*/
+@media (max-width:576px) {
+  .contenedorGaleria {
+   grid-template-columns: repeat(1, 1fr);
+   padding-left: 50px;
+   
+   
+  }
+ 
+  .carousel-inner{
+    height: 500px;
+    padding: 20px;
+  }
+
+.parrafoAromatico{
+  font-size: 15px;
+}
+  .contenedorPadreImagen {
+    grid-template-columns: repeat(1, 1fr);
+    
+    
+  }
+
+  .contenedorImagenPadre {
+    grid-template-columns: repeat(1, 1fr);
+    
+  }
+}
+
+@media (min-width:577px) and (max-width:996px) {
+  .contenedorGaleria {
+  grid-template-columns: repeat(2, 320px);
+  padding-left: 60px;
+  
+  }
+
+  .contenedorPadreImagen {
+    grid-template-columns: repeat(2, 320px);
+    padding-left:60px;
+  }
+
+  .contenedorImagenPadre {
+    grid-template-columns: repeat(2, 320px);
+    padding-left: 60px;
+    
+  }
+}
+
+
+@media (min-width: 993px)  {
+  .contenedorGaleria {
+  grid-template-columns: repeat(4, 320px);
+  
+  }
+
+  .contenedorPadreImagen {
+    grid-template-columns: repeat(4, 290px);
+    padding-left: 80px;
+  }
+
+  .contenedorImagenPadre {
+    grid-template-columns: repeat(4, 300px);
+    padding-left: 70px;
+  }
+}
