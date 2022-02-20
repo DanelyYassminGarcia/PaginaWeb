@@ -1,0 +1,255 @@
+/*Variables-----------------------------------*/
+body {
+  background-color: #f5d6db;
+  padding: 1px;
+  margin: 3px;
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#f5d6db), to(#da7caf));
+  background-image: linear-gradient(to top, #f5d6db, #da7caf);
+}
+
+/* estilos del h1 al h3------------------------------------------------ */
+.titulo {
+  font-family: 'Great Vibes', cursive;
+  font-size: 60px;
+  text-align: center;
+  margin: 5px;
+}
+
+h2 {
+  font-family: "Arimo", sans-serif;
+  text-align: center;
+  font-size: 35px;
+  padding-bottom: 30px;
+}
+
+h3 {
+  font-family: "Arimo", sans-serif;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+/* seccion barra de navegacion------------------------------------------*/
+nav ul li a {
+  color: black;
+  font-family: "Arimo", sans-serif;
+}
+
+.container-fluid ul {
+  padding: 10px;
+  margin: 10px;
+}
+
+.container-fluid ul li a {
+  color: black;
+  font-size: 20px;
+}
+
+/*SECCION MENU PRINCIPAL-------------------------------------------------*/
+.parrafoNav {
+  margin: 30px;
+}
+
+/* etiqueta p-----------------------------------------------------------*/
+p {
+  font-family: "Arimo", sans-serif;
+  margin-left: 10px;
+}
+
+/* SECCION AROMATICOS -----------------------------------------------------------------*/
+.parrafoAromatico {
+  margin: 10px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.contenedorImagenPadre {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (280px)[4];
+      grid-template-columns: repeat(4, 280px);
+  padding: 20px;
+}
+
+.imagenTexto {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border: solid 1px black;
+}
+
+/* SECCION SUBLIMABLES ----------------------------------------------------------------*/
+.contenedorPadreImagen {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (280px)[4];
+      grid-template-columns: repeat(4, 280px);
+  padding: 20px;
+}
+
+.imagenTextoSublimacion {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border: solid 1px black;
+}
+
+/* SECCION GALERIA-----------------------------------------------------------------------*/
+.contenedorGaleria {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (320px)[4];
+      grid-template-columns: repeat(4, 320px);
+  padding: 30px;
+}
+
+.galeriaItem {
+  margin: 10px;
+}
+
+.zoom {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.zoom:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/* seccion formulario-----------------------------------------------------*/
+form {
+  border: 2px solid black;
+  width: 350px;
+  margin: auto;
+  padding: 10px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 7px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 17px;
+  font-family: "Arimo", sans-serif;
+}
+
+input:focus {
+  width: 200px;
+  font-size: 24px;
+}
+
+/* seccion footer-------------------------------------------------------*/
+footer ul li {
+  list-style: none;
+}
+
+footer a {
+  font-family: "Arimo", sans-serif;
+}
+
+footer ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+}
+
+.footerControlador {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.listaFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.listaItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-inline: 10px;
+  padding-top: 20px;
+}
+
+.listaItem a {
+  color: blue;
+}
+
+/* MEDIA RESPONSIVE-------------------------------------------------------------------------------*/
+@media (max-width: 576px) {
+  .contenedorGaleria {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .parrafoNav {
+    font-size: 15px;
+  }
+  .parrafoAromatico {
+    font-size: 15px;
+  }
+  .contenedorPadreImagen {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .contenedorImagenPadre {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+  .contenedorGaleria {
+    -ms-grid-columns: (320px)[2];
+        grid-template-columns: repeat(2, 320px);
+    padding-left: 60px;
+  }
+  .contenedorPadreImagen {
+    -ms-grid-columns: (320px)[2];
+        grid-template-columns: repeat(2, 320px);
+    padding-left: 60px;
+  }
+  .contenedorImagenPadre {
+    -ms-grid-columns: (320px)[2];
+        grid-template-columns: repeat(2, 320px);
+    padding-left: 60px;
+  }
+}
+
+@media (min-width: 993px) {
+  .contenedorGaleria {
+    -ms-grid-columns: (320px)[4];
+        grid-template-columns: repeat(4, 320px);
+  }
+  .contenedorPadreImagen {
+    -ms-grid-columns: (290px)[4];
+        grid-template-columns: repeat(4, 290px);
+    padding-left: 80px;
+  }
+  .contenedorImagenPadre {
+    -ms-grid-columns: (300px)[4];
+        grid-template-columns: repeat(4, 300px);
+    padding-left: 70px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
