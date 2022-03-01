@@ -1,4 +1,11 @@
 /*Variables-----------------------------------*/
+/*MAP GET------------------------------------*/
+/*EXTEND-------------------------------------*/
+.titulo {
+  background-color: red;
+}
+
+/*MIXINS-------------------------------------*/
 body {
   background-color: #f5d6db;
   padding: 1px;
@@ -21,12 +28,14 @@ h2 {
   text-align: center;
   font-size: 35px;
   padding-bottom: 30px;
+  background-color: lightblue;
 }
 
 h3 {
   font-family: "Arimo", sans-serif;
   text-align: center;
   padding-bottom: 30px;
+  background-color: lightblue;
 }
 
 /* seccion barra de navegacion------------------------------------------*/
@@ -76,6 +85,7 @@ p {
   padding: 10px;
   margin: 10px;
   border: solid 1px black;
+  background-color: #974646;
 }
 
 /* SECCION SUBLIMABLES ----------------------------------------------------------------*/
