@@ -4,16 +4,16 @@ $color-negro: black;
 
 /*MAP GET------------------------------------*/
 $estilos:(
-  color: rgb(151, 70, 70)
+  tamano: 15px
   );
 
 /*EXTEND-------------------------------------*/
 %heading{
-  background-color: red
+  font-size: 60px;
 }
 /*MIXINS-------------------------------------*/
-@mixin color-fondo{
-  background-color: lightblue
+@mixin tamano-fondo{
+  font-size: 35px;
 }
 
 
@@ -28,7 +28,6 @@ body {
 /* estilos del h1 al h3------------------------------------------------ */
 .titulo{
     font-family: 'Great Vibes', cursive;
-    font-size: 60px;
     text-align: center;
     margin: 5px;
     @extend %heading;
@@ -37,16 +36,15 @@ body {
 h2{
   font-family: $letra-arimo;
     text-align: center;
-    font-size: 35px;
     padding-bottom: 30px;
-    @include color-fondo;
+    @include tamano-fondo();
 }
 
 h3{
     font-family: $letra-arimo;
     text-align: center;
     padding-bottom: 30px;
-    @include color-fondo;
+    @include tamano-fondo();
 }
 
 /* seccion barra de navegacion------------------------------------------*/                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
@@ -107,7 +105,7 @@ margin: 10px;
    padding: 10px;
    margin: 10px;
    border: solid 1px $color-negro;
-   background-color: map-get($estilos, color);
+   font-size: map-get($estilos, tamano);
  }
 
 /* SECCION SUBLIMABLES ----------------------------------------------------------------*/

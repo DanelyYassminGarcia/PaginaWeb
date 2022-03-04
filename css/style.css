@@ -2,7 +2,7 @@
 /*MAP GET------------------------------------*/
 /*EXTEND-------------------------------------*/
 .titulo {
-  background-color: red;
+  font-size: 60px;
 }
 
 /*MIXINS-------------------------------------*/
@@ -18,7 +18,6 @@ body {
 /* estilos del h1 al h3------------------------------------------------ */
 .titulo {
   font-family: 'Great Vibes', cursive;
-  font-size: 60px;
   text-align: center;
   margin: 5px;
 }
@@ -26,16 +25,15 @@ body {
 h2 {
   font-family: "Arimo", sans-serif;
   text-align: center;
-  font-size: 35px;
   padding-bottom: 30px;
-  background-color: lightblue;
+  font-size: 35px;
 }
 
 h3 {
   font-family: "Arimo", sans-serif;
   text-align: center;
   padding-bottom: 30px;
-  background-color: lightblue;
+  font-size: 35px;
 }
 
 /* seccion barra de navegacion------------------------------------------*/
@@ -85,7 +83,7 @@ p {
   padding: 10px;
   margin: 10px;
   border: solid 1px black;
-  background-color: #974646;
+  font-size: 15px;
 }
 
 /* SECCION SUBLIMABLES ----------------------------------------------------------------*/
